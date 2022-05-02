@@ -1,7 +1,7 @@
 # Bitcoin-Price-Prediction
 Attempt to predict the highly volatile Bitcoin prices.
 
-![image](https://user-images.githubusercontent.com/32412569/166311768-06383925-086e-4892-9ad8-02ae2c72550f.png)
+![image](https://user-images.githubusercontent.com/32412569/166312336-fef8184a-6cc1-4bf3-9250-1d830da6c370.png)
 
 
 
