@@ -9,6 +9,12 @@ Bitcoin (₿) is a decentralized digital currency, without a central bank or sin
 
 Bitcoin has also fueled a rise of plethora of other cryptocurrencies, but Bitcoin still remains the king of them all. Bitcoin has the highest Market Capitalization of any cryptocurrency. Since Bitcoin and other cryptocurrencies are actively traded 24/7 and as Bitcoin remains as the most dominant of all the cryptocurrencies, the price of other crytos are mostly dictated with according to the price action of Bitcoin. So Bitcoin's Price prediction can be a game changer for crypto enthusiastic traders accross the globe.
 
-The Historic market data, which is a time series data of 1 day(1D) time frame is used for this project. From the historic price action we can see that Bitcoin is highly volatile compared to conventional stocks. So the time series model won't be very accurate and dependable, Nonetheless this is just an attempt to see how close we can get.
+The Historic market data, which is a time series data of 1 day(1D) time frame is used for this project. From the historic price action we can see that Bitcoin is highly volatile compared to conventional stocks. Also because Cryptocurrencies are still an emerging asset class, the historic market data is limited compared to conventional stocks. 
+
+The Prediction is done using two strategies, firstly using only the Close price. The model is trained on past 75 days of Close price as input and the next day Close price as Output. So the idea is if we provide the trained model with the past 75 days Close Price, the model will predict the next days Closing Price. Same strategy is used to predict the next 5 days price for BTC and a webapp is hosted in the below site using Streamlit.
+
+https://ashokrajagopal68-bitcoin-price-prediction-final-n24egq.streamlitapp.com/
+
+Also another strategy is considering various other indicators capturing market sentiment and On-chain metrics of the past 75 days to predict the next days Close price. Eventhough we are able to provide the model with useful information that could help prediction, Since the On-chain metrics and Fear and Greed indices are lagging indicators, the prediction will only be possible for the following day.
 
 ![image](https://user-images.githubusercontent.com/32412569/166311332-d8d21c62-03f6-4a89-b8bd-7af729948020.png)
