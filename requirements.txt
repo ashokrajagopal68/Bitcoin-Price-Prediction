@@ -1,0 +1,6 @@
+matplotlib
+tensorflow
+seaborn
+scikit-learn
+mpld3
+plost
