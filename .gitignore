@@ -1,0 +1,5 @@
+config.py
+/ext
+.vscode
+_pycache_
+.ipynb_checkpoints
