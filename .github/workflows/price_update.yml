@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        env:
+        with:
           API_KEY_GLASSNODE: ${{ secrets.API_KEY_GLASSNODE }}
         run: python update_db.py
           
