@@ -6,5 +6,4 @@ mpld3
 plost
 pandas
 requests
-json
-csv
+
