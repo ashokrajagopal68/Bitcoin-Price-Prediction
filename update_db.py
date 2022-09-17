@@ -58,7 +58,7 @@ sopr.rename(columns={'t':'date', 'v':'sopr_val'}, inplace = True)
 pfng = df.merge(price, on = 'date', how='inner')
 pfngs = pfng.merge(sopr, on = 'date', how='inner')
 pfngs = pfngs[::-1].reset_index(drop = True)
-pfngs.to_csv(r'btc_pfngs.csv', index=False)
+#pfngs.to_csv(r'btc_pfngs.csv', index=False)
 pfngs.set_index('date', inplace=True)
 
 # Drop fear-Greed categorical variable as fear and greed value is retained
