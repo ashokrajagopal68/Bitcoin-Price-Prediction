@@ -49,7 +49,8 @@ res = requests.get('https://api.glassnode.com/v1/metrics/indicators/sopr',
 rs = res.content.decode('utf-8')
 
 # convert to pandas dataframe
-sopr = pd.read_json(res.text, convert_dates=['t'])
+sopr = pd.DataFrame(res.json())
+sopr['t'] = pd.to_datetime(sopr['t'], unit='s')
 sopr.rename(columns={'t':'date', 'v':'sopr_val'}, inplace = True)
 
 
