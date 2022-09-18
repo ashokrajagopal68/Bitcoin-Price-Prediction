@@ -41,7 +41,7 @@ price['date'] = pd.to_datetime(price['date'],unit = 's')
 onc = requests.get('https://api.cryptoquant.com/v1/Bitcoin/Exchange-Flows')
 #API_KEY = config.api_key
 API_KEY = os.environ['API_KEY_GLASSNODE']
-print(API_KEY)
+
 
 res = requests.get('https://api.glassnode.com/v1/metrics/indicators/sopr',
     params={'a': 'BTC', 'api_key': API_KEY})
